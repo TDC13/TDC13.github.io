@@ -18,6 +18,7 @@ class App{
 
 		const light = new THREE.DirectionalLight();
 		light.position.set(0.2, 1, 1);
+		this.scene.add(light);
 
 		this.renderer = new THREE.WebGLRenderer( { antialias: true});
 		this.renderer.setPixelRatio( window.devicePixelRatio);
